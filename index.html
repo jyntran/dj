@@ -26,33 +26,9 @@
     }
   </style>
 
-<!--
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
--->
-
   <script src="js/jquery-latest.min.js"></script>
   <script src="js/jquery.slides.min.js"></script>
   
-  <script>
-    $(function() {
-      $('#slides').slidesjs({
-        width: 960,
-        height: 540,
-		pagination: {
-          active: true,	
-          effect: "fade"
-		},		
-        play: {
-          active: true,
-		  effect: "fade",
-          auto: true,
-          interval: 4000,
-          swap: true,
-		  pauseOnHover: false
-        }
-      });
-    });
-  </script>
   <!-- SlidesJS end -->
 
   <!-- Smooth Scrolling -->
@@ -61,7 +37,7 @@
 </head>
 <body>
 
-	<a name="top"><div class="top row">
+	<a name="top"></a><div class="top row">
 		<div class="large-12 columns">
 		  <div id="titleSmall" class="title show-for-small hide-for-medium-up">
 		    <a href=""></a>
@@ -71,7 +47,7 @@
 		  </div>
 		  <p id="sub">this is about a young shepherd and a king's son 
 		</div>
-	</div></a>
+	</div>
 
 	<div class="splash row">
 		<div id="slides" class="splash large-12 columns">
@@ -82,7 +58,7 @@
 	
 	<div class="main row">
 		<div class="large-8 columns">
-			<h2>Lorem ipsum</h2>
+			<h2 class="section">Lorem ipsum</h2>
 
 			<div class="row">
 				<div class="large-12 columns">
@@ -92,7 +68,7 @@
 				</div>
 			</div>
 
-			<a name="story"><h2>Story</h2></a>
+			<a name="story"><h2 class="section">Story</h2></a>
 
 			<div class="row">
 				<div class="large-12 columns">
@@ -102,7 +78,7 @@
 				</div>
 			</div>
 
-			<a name="characters"><h2>Characters</h2></a>
+			<a name="characters"><h2 class="section">Characters</h2></a>
 
 			<div class="row">
 				<div class="large-12 columns">
@@ -117,7 +93,7 @@
 				</div>
 			</div>
 			
-			<a name="download"><h2>Download</h2></a>
+			<a name="download"><h2 class="section">Download</h2></a>
 
 			<div class="row">
 				<div class="large-12 columns">
@@ -127,7 +103,7 @@
 				</div>
 			</div>
 			
-			<a name="special"><h2>Special</h2></a>
+			<a name="special"><h2 class="section">Special</h2></a>
 
 			<div class="row">
 				<div class="large-12 columns">
@@ -152,7 +128,7 @@
 	</div>
 
 	<div class="footer row">
-		<div class=" large-12 columns">
+		<div class="large-12 columns">
 			<p>&copy; 2013 J. Tran</p>
 		</div>
 	</div>	
@@ -161,6 +137,27 @@
   document.write('<script src=' +
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
   '.js><\/script>')
+  </script>
+
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 960,
+        height: 540,
+		pagination: {
+          active: true,	
+          effect: "fade"
+		},		
+        play: {
+          active: true,
+		  effect: "fade",
+          auto: true,
+          interval: 4000,
+          swap: true,
+		  pauseOnHover: false
+        }
+      });
+    });
   </script>
   
   <script src="js/foundation.min.js"></script>
